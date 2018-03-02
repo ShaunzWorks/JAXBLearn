@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company name="JAXB" website="www.jaxb.com" ceo="Zhangsan" estabilishTime="2018-03-01 13:59:59">
+	<branch name="Tech" manager="Lisi">
+		<staff name="Lisi" gender="Male" say="ni hao"/>
+		<staff name="Lilei" gender="Male" say="ni hao"/>
+		<staff name="Tim" gender="Male" say="Hellow"/>
+	</branch>
+	<branch name="Finance" manager="Wangwu">
+		<staff name="Zhangsan" gender="Male" say="ni hao"/>
+		<staff name="Wangwu" gender="Female" say="ni hao"/>
+		<staff name="Wangxia" gender="Female" say="hellow"/>
+	</branch>
+</company>
