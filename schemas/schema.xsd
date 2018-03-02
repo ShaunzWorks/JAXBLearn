@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="company" type="company"/>
+
+  <xs:complexType name="company">
+    <xs:sequence>
+      <xs:element name="branch" type="branch" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="estabilishTime" type="xs:string"/>
+    <xs:attribute name="ceo" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="website" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="branch">
+    <xs:sequence>
+      <xs:element name="staff" type="staff" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="manager" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="staff">
+    <xs:sequence/>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="gender" type="xs:string"/>
+    <xs:attribute name="say" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>
+
