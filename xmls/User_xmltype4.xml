@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user>
+    <name>LiSi</name>
+    <gender>Female</gender>
+    <messages>NI HAO!</messages>
+    <cars>
+        <car name="LykanHypersport" color="White"/>
+        <car name="Lamborghini" color="Black"/>
+        <car name="Maybach" color="Red"/>
+    </cars>
+</user>

@@ -25,8 +25,7 @@ public class RunMe {
 			model = object.getValue();
 			print(model);
 		} catch (JAXBException e) {
-			logger.error(e.getMessage());
-			e.printStackTrace();
+			logger.error(e);
 		}
 
 	}
