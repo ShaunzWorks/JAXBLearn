@@ -13,8 +13,10 @@ import portableclazz.xjc.pojo.ObjectFactory;
 import util.IOStreamUtil;
 import util.JavaXmlBindUtil;
 
+//xjc -d src -p portableclazz.xjc.pojo maven-4.0.0.xsd
 public class RunMe {
 	private static Logger logger = Logger.getLogger(RunMe.class);
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		InputStream is = IOStreamUtil.readFile("pom.xml");
 		try {

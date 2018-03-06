@@ -9,12 +9,11 @@ import log.Logger;
 
 public class IOStreamUtil {
 	private static Logger logger = Logger.getLogger(IOStreamUtil.class);
-	
-	public static InputStream readFile(String fileNm){
-		File file = new File(getClazzPath()+"/xmls/" + fileNm);
+	public static InputStream readFile(String fileNm) {
 		InputStream inputStream = null;
 		try {
-			inputStream = new FileInputStream(file);
+			String prePath = getClazzPath()+"/xmls/";
+			inputStream = new FileInputStream(new File(prePath+fileNm));
 		} catch (FileNotFoundException e) {
 			logger.error(e.getMessage());
 		}
@@ -22,7 +21,9 @@ public class IOStreamUtil {
 	}
 	
 	public static String getClazzPath(){
-		return System.getProperty("user.dir");
+		//String clazzPath = System.getProperty("java.class.path", ".");
+		String clazzPath = System.getProperty("user.dir", ".");
+		return clazzPath;
 	}
 
 }
